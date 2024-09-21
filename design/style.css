@@ -1,0 +1,169 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+@font-face{
+    font-family:"Young Serif";
+    src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: var(--white);
+    margin:0
+}
+
+main {
+    margin: 0;
+    font-family: "Outfit";
+    color: var(--stone600);
+    background-color: var(--white);
+}
+
+p {
+    font-size: 16px;
+}
+
+.imgOmelette img {
+    width: 100%;
+    background: contain;
+}
+
+.intro {
+    align-items: center;
+    margin: 16px;
+}
+
+.intro h1 {
+    color: black;
+}
+
+h1, h3 {
+    font-family: "Young Serif" ;
+}
+
+.preparation {
+    background: var(--rose50);
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.preparationList li {
+    margin-bottom: 10px;
+}
+
+.preparation h2 {
+    color: var(--rose800);
+    font-size: 18px;
+}
+
+.ingredients {
+    margin-right: 16px;
+}
+
+.ingredients h3 {
+    color: var(--brown800);
+    margin: 16px;
+    font-size: 26px;
+}
+
+.ingredientsList li {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 0 16px 0 16px;
+    border-color: var(--stone600);
+}
+
+.instructions {
+    margin-right: 16px;
+}
+
+.instructions h3 {
+    color: var(--brown800);
+    margin: 16px;
+    font-size: 26px;
+}
+
+.nutrition h3 {
+    color: var(--brown800);
+    margin: 16px;
+    font-size: 26px;
+}
+
+.nutrition p {
+    margin-left: 16px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.type, .number {
+    border-bottom: 1px solid var(--stone900);
+    text-align: left;
+    border-color: var(--stone600);
+    padding: 8px;
+}
+
+.type:nth-child(7), .number:nth-child(8) {
+    border-bottom: none;
+}
+
+.number {
+    color: var(--brown800);
+    font-weight: bold;
+}
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width : 1440px){
+    body {
+        background-color: var(--stone100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+        margin: 0;
+    }
+    
+    main {
+        max-width: 768px;
+        max-height: auto;
+        background-color: var(--white);
+        border-radius: 16px;
+        padding: 32px;
+    }
+
+    .imgOmelette img {
+        border-radius: 16px;
+
+    }
+}
+
